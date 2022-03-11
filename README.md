@@ -13,7 +13,7 @@
 * Javascript
 * 
 
-## This application takes a solar year which lasts 365 days on planet Earth. However, the length of a solar year varies from planet to planet. For instance, a solar year on Mercury lasts 88 days. This application will determines a user's age based on a planet's solar years.
+### This application takes a solar year which lasts 365 days on planet Earth. However, the length of a solar year varies from planet to planet. For instance, a solar year on Mercury lasts 88 days. This application will determines a user's age based on a planet's solar years.
 
 ## Setup/Installation Requirements
 
