@@ -2,13 +2,22 @@ import GalacticAge from './../src/js/superGalacticAgeCalculator.js';
 
 describe ('GalacticAge', () => {
 
-  test('should return users age on each planet based on 1 earth year', () => {
-    let galacticAge = new GalacticAge(1);
-    expect(galacticAge.earth).toEqual(1);
-    expect(galacticAge.mercury).toEqual(4.166666666666667);
-    expect(galacticAge.venus).toEqual(1.6129032258064517);
-    expect(galacticAge.mars).toEqual(0.5319148936170213);
-    expect(galacticAge.jupiter).toEqual(0.08431703204047218);
+  test('should return GalacticAge function', () => {
+    let galacticAge = new GalacticAge();
+    expect(galacticAge.age).toEqual(20);
+    expect(galacticAge.earthLifeExpectancy).toEqual(80);
+    expect(galacticAge.mercury).toEqual(0.24);
+    expect(galacticAge.venus).toEqual(0.62);
+    expect(galacticAge.mars).toEqual(1.88);
+    expect(galacticAge.jupiter).toEqual(11.86);
   });
 });
 
+// describe ('ageOnPlanet', () => {
+
+//   test('should return age on each planet', () => {
+//     let ageOnPlanet = new GalacticAge();
+//     expect(ageOnPlanet.earth).toEqual(20);
+//     expect(ageOnPlanet.mercury).toEqual();
+//   });
+// });
