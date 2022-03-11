@@ -7,12 +7,5 @@ export default class GalacticAge {
     this.jupiter = this.earth / 11.86;
 }
 
-  leftToLive () {
-    this.earthLifeExpectancy = 80;
-    this.earthEndTime = this.earthLifeExpectancy - this.earth;
-    this.mercuryEndTime = this.earthLifeExpectancy / .24 - this.mercury;
-    this.venusEndTime = this.earthLifeExpectancy / .62 - this.venus;
-    this.marsEndTime = this.earthLifeExpectancy / 1.88 - this.mars;
-    this.jupiterEndTime = this.earthLifeExpectancy / 11.86 - this.jupiter;
-  }
+
 }
