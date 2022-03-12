@@ -7,29 +7,34 @@ export default class GalacticAge {
     this.venus = 0.62;
     this.mars = 1.88;
     this.jupiter = 11.86;
-}
+};
 
   calculateEarth() {
     return this.earthLifeExpectancy - this.age;
-  }
+  };
 
   calculateMercury() {
     return Math.round(this.age/this.mercury); 
-  }
+  };
 
   calculateVenus() {
     return Math.round(this.age/this.venus);
-  }
+  };
 
   calculateMars() {
     return Math.round(this.age/this.mars);
-  }
+  };
 
   calculateJupiter() {
     return Math.round(this.age/this.jupiter);
-  }
+  };
 
   mercuryYearsRemaining() {
-    return Math.abs(Math.round(this.age/this.mars) - this.earthLifeExpectancy);
-  }
+    let mercuryYearsReaming = this.calculateMercury();
+    return mercuryYearsReaming -= this.earthLifeExpectancy;
+  };
+
+  // venusYearsRemaining() {
+  //   return Math.round(this.age/this.venus) - this.earthLifeExpectancy;
+  // }
 }
