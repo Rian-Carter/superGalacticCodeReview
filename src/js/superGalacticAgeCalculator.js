@@ -23,4 +23,8 @@ export default class GalacticAge {
   calculateMars() {
     return Math.round(this.age/this.mars);
   }
+
+  calculateJupiter() {
+    return Math.round(this.age/this.jupiter);
+  }
 }
