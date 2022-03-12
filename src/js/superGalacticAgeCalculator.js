@@ -29,5 +29,7 @@ export default class GalacticAge {
     return Math.round(this.age/this.jupiter);
   }
 
-  yearsRemaining
+  mercuryYearsRemaining() {
+    return Math.abs(Math.round(this.age/this.mars) - this.earthLifeExpectancy);
+  }
 }
