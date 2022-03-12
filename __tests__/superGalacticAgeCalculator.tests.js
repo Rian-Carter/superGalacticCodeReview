@@ -27,6 +27,13 @@ describe ('calculateMercury', () => {
   });
 });
 
+describe ('calculateVenus', () => {
+  test('should return number of years remaining on Venus', () => {
+    let galacticAge = new GalacticAge(50);
+    expect(galacticAge.calculateVenus()).toEqual(81);
+  })
+})
+
 
 
 
