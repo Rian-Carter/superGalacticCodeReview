@@ -12,4 +12,7 @@ export default class GalacticAge {
     return this.earthLifeExpectancy - this.age;
   }
 
+  calculateMercury() {
+    return Math.round(this.age/this.mercury); 
+  }
 }
