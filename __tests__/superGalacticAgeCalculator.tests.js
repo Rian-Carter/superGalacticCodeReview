@@ -1,5 +1,5 @@
 import GalacticAge from './../src/js/superGalacticAgeCalculator.js';
-
+//test1
 describe ('GalacticAge', () => {
 
   test('should return GalacticAge function', () => {
@@ -14,38 +14,48 @@ describe ('GalacticAge', () => {
   });
 });
 
-describe ('calculateEarth', () => {
+// test2
+describe ('earthYearsRemaining', () => {
+  
   test('should return years remaining on Earth', () => {
     let galacticAge = new GalacticAge(50);
-    expect(galacticAge.calculateEarth()).toEqual(30);
+    expect(galacticAge.earthYearsRemaining()).toEqual(30);
   });
 });
 
+// test3
 describe ('calculateMercury', () => {
+  
   test('should return age on Mercury', () => {
     let galacticAge = new GalacticAge(50);
-    expect(galacticAge.calculateMercury()).toEqual(208);
+    expect(galacticAge.calculateAgeMercury()).toEqual(208);
   });
 });
 
+// test4
 describe ('calculateVenus', () => {
+  
   test('should return age on Venus', () => {
     let galacticAge = new GalacticAge(50);
-    expect(galacticAge.calculateVenus()).toEqual(81);
+    expect(galacticAge.calculateAgeVenus()).toEqual(81);
   });
 });
 
+// test5
 describe ('calculateMars', () => {
+  
   test('should return age on mars', () => {
     let galacticAge = new GalacticAge(50);
-    expect(galacticAge.calculateMars()).toEqual(27);
+    expect(galacticAge.calculateAgeMars()).toEqual(27);
   });
 });
 
+// test6
 describe ('calculateJupiter', () => {
+  
   test('should return age on jupiter', () => {
     let galacticAge = new GalacticAge(50);
-    expect(galacticAge.calculateJupiter()).toEqual(4);
+    expect(galacticAge.calculateAgeJupiter()).toEqual(4);
   });
 });
 
