@@ -31,13 +31,20 @@ describe ('calculateVenus', () => {
   test('should return number of years remaining on Venus', () => {
     let galacticAge = new GalacticAge(50);
     expect(galacticAge.calculateVenus()).toEqual(81);
-  })
+  });
 });
 
 describe ('calculateMars', () => {
   test('should return number of years remaining on mars', () => {
     let galacticAge = new GalacticAge(50);
     expect(galacticAge.calculateMars()).toEqual(27);
+  });
+});
+
+describe ('calculateJupiter', () => {
+  test('should return number of years remaining on jupiter', () => {
+    let galacticAge = new GalacticAge(50);
+    expect(galacticAge.calculateJupiter()).toEqual(4);
   });
 });
 
