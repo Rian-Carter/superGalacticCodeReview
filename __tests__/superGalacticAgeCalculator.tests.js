@@ -3,7 +3,7 @@ import GalacticAge from './../src/js/superGalacticAgeCalculator.js';
 describe ('GalacticAge', () => {
 
   test('should return GalacticAge function', () => {
-    let galacticAge = new GalacticAge(50, 80);
+    let galacticAge = new GalacticAge(50);
     expect(galacticAge.age).toEqual(50);
     expect(galacticAge.earthDays).toEqual(365);
     expect(galacticAge.earthLifeExpectancy).toEqual(80);
@@ -73,3 +73,10 @@ describe ('marsYearsReaming', () => {
   });
 });
 
+//test10
+describe ('jupiterYearsReaming', () => {
+  test('should return years remaining on mars', () => {
+    let galacticAge = new GalacticAge(50);
+    expect(galacticAge.jupiterYearsRemaining()).toEqual(76);
+  });
+});
