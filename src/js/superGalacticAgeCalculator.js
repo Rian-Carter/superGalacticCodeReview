@@ -1,7 +1,6 @@
 export default class GalacticAge {
   constructor (age) {
     this.age = age;
-    // this.earthDays = 365;
     this.earthLifeExpectancy = 80;
     this.mercury = 0.24;
     this.venus = 0.62;
@@ -9,43 +8,43 @@ export default class GalacticAge {
     this.jupiter = 11.86;
 };
 
-  calculateEarth() {
+  earthYearsRemaining() {
     return this.earthLifeExpectancy - this.age;
   };
 
-  calculateMercury() {
+  calculateAgeMercury() {
     return Math.round(this.age/this.mercury); 
   };
 
-  calculateVenus() {
+  calculateAgeVenus() {
     return Math.round(this.age/this.venus);
   };
 
-  calculateMars() {
+  calculateAgeMars() {
     return Math.round(this.age/this.mars);
   };
 
-  calculateJupiter() {
+  calculateAgeJupiter() {
     return Math.round(this.age/this.jupiter);
   };
 
   mercuryYearsRemaining() {
-    let mercuryYearsReamaining = this.calculateMercury();
+    let mercuryYearsReamaining = this.calculateAgeMercury();
     return mercuryYearsReamaining -= this.earthLifeExpectancy;
   };
 
   venusYearsRemaining() {
-    let venusYearsRemaining = this.calculateVenus();
+    let venusYearsRemaining = this.calculateAgeVenus();
     return venusYearsRemaining -= this.earthLifeExpectancy;
   }
 
   marsYearsRemaining() {
-    let marsYearsRemaining = this.calculateMars();
+    let marsYearsRemaining = this.calculateAgeMars();
     return Math.abs(marsYearsRemaining -= this.earthLifeExpectancy);
   }
 
   jupiterYearsRemaining() {
-    let jupiterYearsRemaining = this.calculateJupiter();
+    let jupiterYearsRemaining = this.calculateAgeJupiter();
     return Math.abs(jupiterYearsRemaining -= this.earthLifeExpectancy);
   }
 }
