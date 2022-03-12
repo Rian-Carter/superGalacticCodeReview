@@ -58,11 +58,13 @@ describe ('mercuryYearsReaming', () => {
 });
 
 //test8
-// describe ('venusYearsReaming', () => {
-//   test('should return years remaining on venus', () => {
-//     let galacticAge = new GalacticAge(50);
-//     expect(galacticAge.venusYearsRemaining()).toEqual(50);
-//   });
-// });
+describe ('venusYearsReaming', () => {
+  test('should return years remaining on venus', () => {
+    let galacticAge = new GalacticAge(50);
+    expect(galacticAge.venusYearsRemaining()).toEqual(1);
+  });
+});
+
+//test9
 
 
