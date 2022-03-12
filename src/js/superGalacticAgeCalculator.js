@@ -35,12 +35,17 @@ export default class GalacticAge {
   };
 
   venusYearsRemaining() {
-    let venusYearsRemaining = this.calculateVenus()
+    let venusYearsRemaining = this.calculateVenus();
     return venusYearsRemaining -= this.earthLifeExpectancy;
   }
 
   marsYearsRemaining() {
-    let marsYearsRemaining = this.calculateMars()
+    let marsYearsRemaining = this.calculateMars();
     return Math.abs(marsYearsRemaining -= this.earthLifeExpectancy);
+  }
+
+  jupiterYearsRemaining() {
+    let jupiterYearsRemaining = this.calculateJupiter();
+    return Math.abs(jupiterYearsRemaining -= this.earthLifeExpectancy);
   }
 }
