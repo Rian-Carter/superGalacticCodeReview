@@ -3,8 +3,8 @@ import GalacticAge from './../src/js/superGalacticAgeCalculator.js';
 describe ('GalacticAge', () => {
 
   test('should return GalacticAge function', () => {
-    let galacticAge = new GalacticAge();
-    expect(galacticAge.age).toEqual(20);
+    let galacticAge = new GalacticAge(50, 80);
+    expect(galacticAge.age).toEqual(50);
     expect(galacticAge.earthLifeExpectancy).toEqual(80);
     expect(galacticAge.mercury).toEqual(0.24);
     expect(galacticAge.venus).toEqual(0.62);
@@ -13,11 +13,14 @@ describe ('GalacticAge', () => {
   });
 });
 
-// describe ('ageOnPlanet', () => {
+describe ('calculateEarth', () => {
+  test('should return number of years remaining on Earth', () => {
+    let galacticAge = new GalacticAge(50);
+    expect(galacticAge.calculateEarth()).toEqual(30);
+  });
+});
 
-//   test('should return age on each planet', () => {
-//     let ageOnPlanet = new GalacticAge();
-//     expect(ageOnPlanet.earth).toEqual(20);
-//     expect(ageOnPlanet.mercury).toEqual();
-//   });
-// });
+
+
+
+
