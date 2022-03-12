@@ -15,4 +15,8 @@ export default class GalacticAge {
   calculateMercury() {
     return Math.round(this.age/this.mercury); 
   }
+
+  calculateVenus() {
+    return Math.round(this.age/this.venus);
+  }
 }
