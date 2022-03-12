@@ -5,6 +5,7 @@ describe ('GalacticAge', () => {
   test('should return GalacticAge function', () => {
     let galacticAge = new GalacticAge(50, 80);
     expect(galacticAge.age).toEqual(50);
+    expect(galacticAge.earthDays).toEqual(365);
     expect(galacticAge.earthLifeExpectancy).toEqual(80);
     expect(galacticAge.mercury).toEqual(0.24);
     expect(galacticAge.venus).toEqual(0.62);
