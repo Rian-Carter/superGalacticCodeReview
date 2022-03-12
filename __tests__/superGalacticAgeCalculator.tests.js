@@ -66,5 +66,10 @@ describe ('venusYearsReaming', () => {
 });
 
 //test9
-
+describe ('marsYearsReaming', () => {
+  test('should return years remaining on mars', () => {
+    let galacticAge = new GalacticAge(50);
+    expect(galacticAge.marsYearsRemaining()).toEqual(53);
+  });
+});
 
