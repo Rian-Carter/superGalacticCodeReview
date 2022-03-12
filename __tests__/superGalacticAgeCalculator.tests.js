@@ -20,6 +20,13 @@ describe ('calculateEarth', () => {
   });
 });
 
+describe ('calculateMercury', () => {
+  test('should return number of years reamaining on Mercury', () => {
+    let galacticAge = new GalacticAge(50);
+    expect(galacticAge.calculateMercury()).toEqual(208);
+  });
+});
+
 
 
 
