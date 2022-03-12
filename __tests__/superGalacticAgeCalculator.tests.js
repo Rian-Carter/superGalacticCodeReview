@@ -49,5 +49,12 @@ describe ('calculateJupiter', () => {
   });
 });
 
+describe ('mercuryYearsReaming', () => {
+  test('should return years remaining on mercury', () => {
+    let galacticAge = new GalacticAge(20);
+    expect(galacticAge.mercuryYearsRemaining()).toEqual(69);
+  });
+});
+
 
 
