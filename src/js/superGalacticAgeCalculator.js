@@ -1,7 +1,7 @@
 export default class GalacticAge {
   constructor (age) {
     this.age = age;
-    this.earthDays = 365;
+    // this.earthDays = 365;
     this.earthLifeExpectancy = 80;
     this.mercury = 0.24;
     this.venus = 0.62;
