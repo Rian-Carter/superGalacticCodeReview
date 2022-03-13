@@ -19,7 +19,9 @@
 ## Setup/Installation Requirements
 
 * Clone this repository to your desktop
-* Open index.html in a browser
+* Open index.html
+* Run npm install
+* Run npm run build
 
 ## Known Bugs
 
