@@ -23,7 +23,7 @@ describe ('earthYearsRemaining', () => {
 });
 
 // test3
-describe ('calculateMercury', () => {
+describe ('calculateAgeMercury', () => {
   
   test('should return age on Mercury', () => {
     let galacticAge = new GalacticAge(50);
@@ -32,7 +32,7 @@ describe ('calculateMercury', () => {
 });
 
 // test4
-describe ('calculateVenus', () => {
+describe ('calculateAgeVenus', () => {
   
   test('should return age on Venus', () => {
     let galacticAge = new GalacticAge(50);
@@ -41,7 +41,7 @@ describe ('calculateVenus', () => {
 });
 
 // test5
-describe ('calculateMars', () => {
+describe ('calculateAgeMars', () => {
   
   test('should return age on mars', () => {
     let galacticAge = new GalacticAge(50);
@@ -49,8 +49,8 @@ describe ('calculateMars', () => {
   });
 });
 
-// test6
-describe ('calculateJupiter', () => {
+// // test6
+describe ('calculateAgeJupiter', () => {
   
   test('should return age on jupiter', () => {
     let galacticAge = new GalacticAge(50);
@@ -89,3 +89,23 @@ describe ('jupiterYearsReaming', () => {
     expect(galacticAge.jupiterYearsRemaining()).toEqual(76);
   });
 });
+
+
+
+// describe ('lifeSurpassed', () => {
+//   test('should determine how many years a person has lived past their life expectancy on Mercury', () => {
+//     let userBeyondAge = new GalacticAge(50, 80);
+//     userBeyondAge.lifeSurpassed();
+//     expect(userBeyondAge.mercurySurpassed).toEqual(10);
+//   })
+// })
+
+
+// test11 refactoring code
+// describe ('agePlanets', () => {
+//   test('should return age on different planets', () => {
+//     // let galacticAge = new GalacticAge(50);
+//     let userAge = new GalacticAge(50);
+//     expect(userAge.agePlanets()).toEqual();
+//   })
+// })
